@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>School Management Web Application, School ERP, School Management System</title>
+
+
+<!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="author" content="codedthemes" />
+
+<link rel="icon" href="https://entrar.in/images/en_logo.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/bower_components/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/icon/themify-icons/themify-icons.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/bower_components/lightbox2/css/lightbox.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/bower_components/swiper/css/swiper.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/icon/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/icon/icofont/css/icofont.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/css/jquery.mCustomScrollbar.css">
+
+<link rel="stylesheet" href="https://entrar.in/entrar_responsive_assets/files/assets/pages/chart/radial/css/radial.css" type="text/css" media="all">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/css/style.css">
+
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/css/buttons.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/css/buttons.dataTables.min.css">
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/jquery/js/jquery.min.js "></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/jquery-ui/js/jquery-ui.min.js "></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/popper.js/js/popper.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/bootstrap/js/bootstrap.min.js "></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/widget/excanvas.js "></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js "></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/modernizr/js/modernizr.js "></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/SmoothScroll.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/chart.js/js/Chart.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/widget/amchart/amcharts.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/widget/amchart/serial.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/widget/amchart/light.js"></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/swiper/js/swiper.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/swiper-custom.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/lightbox2/js/lightbox.min.js"></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/pcoded.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/vertical/vertical-layout.min.js "></script>
+
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/js/jszip.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/js/pdfmake.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/js/vfs_fonts.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/dataTables.buttons.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/buttons.flash.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/jszip.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/vfs_fonts.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/buttons.colVis.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+
+
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/pages/dashboard/custom-dashboard.js"></script>
+<script src="https://entrar.in/entrar_responsive_assets/files/assets/js/script.js "></script>
+
+
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0166af39fe3c44148cbdcca33f1487c7"}'></script>
+
+<style type="text/css">
+     /*    .page-wrapper{
+         padding: 0.0rem !important;
+     }
+     .card{ margin-bottom: 10px; } */
+
+        nav.pcoded-header{background:linear-gradient(to right, #11c788, #54e2b7);}
+        .main-body .page-wrapper{padding: 0.0rem !important;}
+        .card{margin-bottom: 12px;}
+        .card .card-header{padding: 5px !important; }
+
+        .btn-success{
+           background:linear-gradient(to {$smarty.session.header_effect_direction}, {$smarty.session.header_first_color} , {$smarty.session.header_second_color} );
+            border-color: {$smarty.session.header_effect_direction};
+
+       
+           
+        }
+
+    .table td, .table th {
+        padding: .35rem;
+    }
+    .table.table-xs td, .table.table-xs th {
+        padding: 0.3rem;
+    }
+
+
+    
+    </style>
+<style>
+     /*    .page-wrapper{
+         padding: 0.0rem !important;
+     }
+     .card{ margin-bottom: 10px; } */
+
+        nav.pcoded-header{background:linear-gradient(to right, #11c788, #54e2b7);}
+        .main-body .page-wrapper{padding: 0.0rem !important;}
+        .card{margin-bottom: 12px;}
+        .card .card-header{padding: 5px !important;}
+
+
+         .btn-success{
+           background-color:#3ac33d !important;
+           border-color:#3ac33d !important;
+           border-radius: .3rem;
+           font-size: 18px;
+
+        }
+        .form-control-success{
+            border-color: #3ac33d !important;
+            color: #3ac33d !important; 
+            border-radius: .3rem;
+        }
+
+        a i {color:#3ac33d;}
+
+        .breadcrumb-header h5{color:#0a4077 ;}
+
+
+        .loader .circle::after {
+            background-color: #3ac33d;
+        }
+    </style>
+<style type="text/css">
+@media print
+{
+    #student_header{visibility:hidden;}
+    #student_menu {display: none;}
+ #enrar_logo{visibility:hidden;}
+} 
+</style>
+<script>
+$(window).on('keydown',function(event)
+{
+    //alert(event.keyCode);
+    var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+    if(event.keyCode==123)
+    {
+        //alert('Entered F12');
+        return false;
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+    {
+       // alert('Entered ctrl+shift+i')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.keyCode==73)
+    {
+       // alert('Entered ctrl+shift+i')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.shiftKey && (pressedKey == "c" || pressedKey == "j"))
+    {
+       // alert('Entered ctrl+shift+c')
+        return false;  //Prevent from ctrl+shift+i
+    }
+});
+$(document).on("contextmenu",function(e)
+{
+alert('Right Click Not Allowed')
+e.preventDefault();
+});
+</script>
+</head>
+<body class="mod-bg-1" oncontextmenu="return false">
+
+<div class="theme-loader">
+<div class="preloader3 loader-block">
+<div class="circ1 loader-danger"></div>
+<div class="circ2 loader-danger"></div>
+<div class="circ3 loader-danger"></div>
+<div class="circ4 loader-danger"></div>
+</div>
+</div>
+
+<div id="pcoded" class="pcoded">
+<div class="pcoded-overlay-box"></div>
+<div class="pcoded-container navbar-wrapper">
+<nav id="student_header" class="navbar header-navbar pcoded-header" style="background:linear-gradient(to right,#01326d,#01326d );">
+<div class="navbar-wrapper">
+<div class="navbar-logo" logo-theme="theme1">
+<a class="mobile-menu" id="mobile-collapse" href="#!">
+<i class="ti-menu"></i>
+</a>
+<div class="mobile-search">
+ <div class="header-search">
+<div class="main-search morphsearch-search">
+<div class="input-group">
+<span class="input-group-addon search-close"><i class="ti-close"></i></span>
+<input type="text" class="form-control" placeholder="Enter Keyword">
+<span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+</div>
+</div>
+</div>
+</div>
+<a href="https://entrar.in/">
+<img class="img-fluid" src="https://entrar.in/logo_dir/entrar_blue_logo.png" alt="Entrar Logo" style="margin-left:10%;" />
+</a>
+<a class="mobile-options">
+<i class="ti-more"></i>
+</a>
+</div>
+<div class="navbar-container container-fluid">
+<ul class="nav-left">
+<li>
+<h4 style=" vertical-align: middle; font-size:30px; line-height: 60px;color:#5ccc2b;">DELHI PUBLIC SCHOOL- BANGALORE NORTH</h4>
+</li>
+</ul>
+<ul class="nav-right">
+<li>
+<div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+</li>
+
+
+<li class="user-profile header-notification">
+<a href="#!">
+<img src="https://pbs.twimg.com/media/Fa26ZppWYAI1S30.jpg" class="img-radius" style="height: 50px; width: 50px;" />
+<span>TOP G</span>
+<i class="ti-angle-down"></i>
+</a>
+<ul class="show-notification profile-notification">
+<li>
+<a href="https://entrar.in/parent_portal/student_full_profile">
+<i class="ti-user"></i> Profile
+</a>
+ </li>
+<li>
+<a href="https://entrar.in/parent_portal/student_setting">
+<i class="ti-settings"></i> Settings
+</a>
+</li>
+
+<li>
+<a href="https://entrar.in/login/logout">
+<i class="ti-layout-sidebar-left"></i> Logout
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div id="sidebar" class="users p-chat-user showChat">
+<div class="had-container">
+<div class="card card_main p-fixed users-main">
+<div class="user-box">
+<div class="chat-search-box">
+<a class="back_friendlist">
+</a>
+</div>
+<div class="main-friend-list">
+<div class="media userlist-box">
+</div>
+<div class="media userlist-box">
+</div>
+<div class="media userlist-box">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="pcoded-main-container">
+<div class="pcoded-wrapper">
+
+<style>
+ li > a > .pcoded-micon {
+            padding: 0px;
+            margin-right: 20px !important;
+        }
+
+ li > a .pcoded-mtext {
+                top: 15px !important;
+            }
+    .pcoded-micon img {
+        height: 32px;
+        width: 32px;
+    }            
+
+/*.pcoded .pcoded-navbar .pcoded-item .pcoded-hasmenu .pcoded-submenu li
+{
+    background-color: #D3E5F4;
+}
+
+.pcoded .pcoded-navbar .pcoded-item .pcoded-hasmenu .pcoded-submenu li hover
+{
+    background-color: #D3E5F4;
+}   */
+</style>
+
+<nav class="pcoded-navbar" id="student_menu">
+<div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+<div class="pcoded-inner-navbar main-menu">
+<ul class="pcoded-item pcoded-left-item">
+ <li class="">
+<a href="https://entrar.in/">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/dashboard.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Dashboard</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="pcoded-hasmenu">
+<a href="javascript:void(0)">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/profile.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Profile</span>
+<span class="pcoded-mcaret"></span>
+</a>
+<ul class="pcoded-submenu">
+<li class="">
+<a href="https://entrar.in/parent_portal/student_full_profile">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Profile</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/parent_portal/parent_details">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Parent</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class=" ">
+<a href="https://entrar.in/parent_portal/school_info">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">
+My School
+</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_infirmary/infirmary">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Infirmary Detail</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_student_achievement/student_achievement">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Achievement</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/parent_portal/transport_detail">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Transport Detail</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="">
+<a href="https://entrar.in/parent_portal/myprofile">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/id_card_info.svg" class="f-left" /></span>
+<span class="pcoded-mtext">ID Card Info</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/pp_vote/showclasspoll">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/vote.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Vote</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class="pcoded-hasmenu">
+<a href="javascript:void(0)">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/school.svg" class="f-left" /></span>
+<span class="pcoded-mtext">
+School
+</span>
+<span class="pcoded-mcaret"></span>
+</a>
+<ul class="pcoded-submenu">
+<li class="">
+<a href="https://entrar.in/parent_portal/event_calendar">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Calendar</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_announcement/announcement">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Announcement</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_assignment/classassignment">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Assignment</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_circular/circular">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Circular</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_news_letter/news_letter">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Newsletters</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_question_bank/question_bank">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Question Bank</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_infirmary/infirmary">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Infirmary Notes</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class=" ">
+<a href="https://entrar.in/pp_studentattendance/studentattendance">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Attendance</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class=" ">
+<a href="https://entrar.in/parent_portal/gallery">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">
+School Gallery
+</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/parent_portal/Contacts">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Contacts</span>
+ <span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_entrar_forms/entrar_forms">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Entrar Forms</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_video_gallery/video_gallery">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Video Gallery</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/parent_portal/photoalbum">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">
+School
+Photos</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/diary_student_inbox/s_display">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Messaging</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="">
+<a href="https://entrar.in/pp_result/exam_result">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/result.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Results</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class=" ">
+<a href="https://entrar.in/pp_entrar_forms/entrar_forms">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/II_III_Lang_Form.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Entrar Forms</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class="">
+<a href="https://entrar.in/fee_student_feeledger_razor_routes_new/index">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/fees.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Fee</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+
+
+
+<li class="">
+<a href="https://entrar.in/pp_covid_profile/index">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/covid.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Covid Form</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+
+
+
+
+
+<li class="">
+<a href="https://entrar.in/pp_inbox/p_listmessages">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/inbox.svg" class="f-left" /></span>
+ <span class="pcoded-mtext">Inbox</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/pp_emagazine/emagazine">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/reminisce.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Reminisce</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/parent_portal/imp_circular">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/important_circular.svg" class="f-left" /></span>
+<span class="pcoded-mtext" style="font-weight: bold;">Important Circular</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class="">
+<a href="https://entrar.in/pp_register_document_upload/register_document_upload">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/CBSE_Registration.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Class IX CBSE Registration</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+
+<!-- -->
+
+
+
+
+
+<li class="pcoded-hasmenu">
+<a href="javascript:void(0)">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/unifrom.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Uniform</span>
+<span class="pcoded-mcaret"></span>
+</a>
+<ul class="pcoded-submenu">
+<li class="">
+<a href="https://entrar.in/ecommerce_parents/index">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Uniform</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/ecommerce_parents/my_order">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">My Order</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a href="https://entrar.in/pp_uniform_form/preview">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/uniform_form.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Uniforms Order Form</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<!-- $smarty.session.school_id eq 50 || $smarty.session.school_id eq 26 || $smarty.session.school_id eq 27  -->
+<li>
+<a href="https://entrar.in/st_book_stall/index">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/library.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Book</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+
+<li class="">
+<a href="https://entrar.in/classroom_creation_crm_new/s_display">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/Online__classroom.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Online Classroom</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+
+<li class="pcoded-hasmenu">
+<a href="javascript:void(0)">
+<span class="pcoded-micon"><img src="https://entrar.in/entrar_responsive_assets/files/assets/icon/menu_icons/studentnew/online_assessment.svg" class="f-left" /></span>
+<span class="pcoded-mtext">Online Assessment</span>
+<span class="pcoded-mcaret"></span>
+</a>
+<ul class="pcoded-submenu">
+<li class="">
+<a href="https://entrar.in/online_exam_student_test/index">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Online Assessment </span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/online_exam_result_new/index">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Class Test Result</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="https://entrar.in/online_exam_result_new/result_list">
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-mtext">Assessment Result</span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+</ul>
+</li>
+
+<li class="">
+<a href="#">
+<span class="pcoded-micon"></span>
+<span class="pcoded-mtext"></span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+<li class="">
+<a href="#">
+<span class="pcoded-micon"></span>
+<span class="pcoded-mtext"></span>
+<span class="pcoded-mcaret"></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<style type="text/css">
+  /*.deleteletter{
+      padding: .25rem .5rem;
+  }
+  .deleteletter1{
+      padding: .25rem .5rem;
+  }*/
+</style>
+<script type="text/javascript">
+    //get on load
+                  $(document).ready(function() {
+                  
+				  	var now = new Date();
+					var day = ("0" + now.getDate()).slice(-2);
+					var month = ("0" + (now.getMonth() + 1)).slice(-2);
+					var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+					$('#fromdate').val(today);
+					
+					getList();
+				  
+				  
+                    //getdata();
+                  });
+
+                  /*function  getdata()
+                  {
+                   	var d = new Date();
+
+                      var month = d.getMonth()+1;
+                      var day = d.getDate();
+
+                     
+                      var current_date = d.getFullYear() + '-' +
+                      ((''+month).length<2 ? '0' : '') + month + '-' +
+                      ((''+day).length<2 ? '0' : '') + day;
+
+                      $('#datashow').html(' <div class="col-xl-12 col-md-4 col-sm-6"><div class="loader animation-start"  style="text-align:"center;"><span class="circle delay-1 size-2"></span><span class="circle delay-2 size-4"></span><span class="circle delay-3 size-6"></span><span class="circle delay-4 size-7"></span><span class="circle delay-5 size-7"></span><span class="circle delay-6 size-6"></span><span class="circle delay-7 size-4"></span><span class="circle delay-8 size-2"></span></div></div>');
+
+                     var myData = 'data=true&current_date='+current_date+'&fromdate='+fromdate;
+                      //alert(myData);
+                            jQuery.ajax({
+                            type: "POST",
+                            dataType:"text",
+                            data:myData,
+                            success:function(response){
+                              //alert(response);
+                               $('#datashow').html(response);
+                             },
+                           });
+                      
+                  }*/
+
+
+</script>
+<div class="pcoded-content">
+<div class="pcoded-inner-content">
+
+<div class="main-body">
+<div class="page-wrapper">
+
+<div class="card">
+<div class="card-block caption-breadcrumb">
+<div class="breadcrumb-header">
+<h5>My Live Classrooms</h5>
+
+</div>
+<div class="page-header-breadcrumb">
+<ul class="breadcrumb-title">
+<li class="breadcrumb-item">
+<a href="https://entrar.in/">
+<i class="icofont icofont-home"></i>
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="javascript:history.back()" alt="Back" class="">
+<i class="ti-arrow-circle-left back_url_btn"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+ </div>
+
+
+<div class="page-body">
+<div class="card">
+<div class="card-header">
+<div class="row">
+<div class="form-group col-md-3">
+<label class="control-label col-sm-12" for="date"><b>Date: </b></label>
+<div class="col-sm-12">
+<input name="date" class="form-control form-control-success" value="02/06/2023" id="fromdate" type="date">
+</div>
+<label class="error" for="name" id="date_error" style="color: red;">This field is required.</label>
+</div>
+<div class="form-group col-md-2">
+<label class="control-label col-sm-12" for="date"><b><br></b></label>
+<div class="col-sm-12">
+<input name="select" type="submit" name="filter" id="filter" class="btn btn-success" value="Search" />
+</div>
+</div>
+<div class="form-group col-md-2">
+<label class="control-label col-sm-12" for="date"><b><br></b></label>
+<div class="col-sm-12">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="table-responsive">
+<div id="datashow"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="styleSelector"></div>
+</div>
+</div>
+</div>
+<script>
+                    $('.error').hide();
+                    </script>
+<script>
+                    $('#filter').on('click',function(event){
+                        event.preventDefault();
+                      getList();
+                    });
+
+                    function getList(){
+                     
+                      var from = $('#fromdate').val();
+                      //alert(from);
+                      
+                       if(from=='')
+                       {
+                        alert('Please Select date.');
+                        return false;
+                       } 
+                       $('#datashow').html(' <div class="col-xl-12 col-md-4 col-sm-6"><div class="loader animation-start"  style="text-align:"center;"><span class="circle delay-1 size-2"></span><span class="circle delay-2 size-4"></span><span class="circle delay-3 size-6"></span><span class="circle delay-4 size-7"></span><span class="circle delay-5 size-7"></span><span class="circle delay-6 size-6"></span><span class="circle delay-7 size-4"></span><span class="circle delay-8 size-2"></span></div></div>');
+
+
+                      //post array
+                      var dataString = 'filter=true&from='+from;
+                      // alert(dataString);
+                      $.ajax({
+                        type: "POST",
+                        data: dataString,
+                        cache: false,
+                        success: function(x){
+                          // alert(x);
+                          if(x===0){
+                            $('#datashow').html(x);
+                            // return 0;
+                          }
+                          else{
+                          $('#datashow').html(x);
+                        }
+                        }
+                      });
+                    }
+
+
+                  
+
+
+                    </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--[if lt IE 10]><![endif]-->
+
+
+
+<!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="https://entrar.in/entrar_responsive_assets/files/assets/images/browser/chrome.png" alt="Chrome">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="https://entrar.in/entrar_responsive_assets/files/assets/images/browser/firefox.png" alt="Firefox">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="https://entrar.in/entrar_responsive_assets/files/assets/images/browser/opera.png" alt="Opera">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="https://entrar.in/entrar_responsive_assets/files/assets/images/browser/safari.png" alt="Safari">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="https://entrar.in/entrar_responsive_assets/files/assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+
+    <script>
+        setTimeout(() => {
+            window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+        }, 4000)
+    </script>
+</body>
+</html>
+
+<ul class="nav-right">
+<li>
+<div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+</li>
+
+
+<li class="user-profile header-notification">
+<a href="#!">
+<img src="https://entrarschool5.s3.ap-south-1.amazonaws.com/avatars/student_1652788816-4FCD1020-5B29-451D-A4D4-89A964CC82F1.jpeg" class="img-radius" style="height: 50px; width: 50px;">
+<span>JESWIN CHOWDARY G </span>
+<i class="ti-angle-down"></i>
+</a>
+<ul class="show-notification profile-notification" style="display: none;">
+<li>
+<a href="https://entrar.in/parent_portal/student_full_profile">
+<i class="ti-user"></i> Profile
+</a>
+ </li>
+<li>
+<a href="https://entrar.in/parent_portal/student_setting">
+<i class="ti-settings"></i> Settings
+</a>
+</li>
+
+<li>
+<a href="https://entrar.in/login/logout">
+<i class="ti-layout-sidebar-left"></i> Logout
+</a>
+</li>
+</ul>
+</li>
+</ul>
